@@ -14,18 +14,21 @@
 	</p>
 
 	<table border="1" >
-		<th>Nombre</th>
-		<th>Apellidos</th>
+		<th>Nombre del alumno</th>
 		<th>Fecha de Alta</th>
+		<th>Asignatura</th>
+		<th>Profesor</th>
 
 		<c:forEach var="listAlumnos" items="${model.listAlumnos}">
+
 			<tr>
-				<td>${listAlumnos.nombre}</td>
-				<td>${listAlumnos.apellidos}</td>
+				<td>${listAlumnos.nombreCompletoAlumno}</td>
 				<td>${listAlumnos.fechaAlta}</td>
+				<td>${listAlumnos.asignatura}</td>
+				<td>${listAlumnos.nombreCompletoProf}</td>
 			</tr>
 		</c:forEach>
 	</table>
-
+	
 </body>
 </html>
